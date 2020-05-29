@@ -19,7 +19,7 @@ const Header = (props) => {
       </h5>
       <div className="d-flex justify-content-around">
         <Link to="/Pokemon-List-React-GraphQL/">Main Table</Link>
-        <Link to="/Pokemon-List-React-GraphQL/reverseList">Reverse Table</Link>
+        <Link to="/reverseList">Reverse Table</Link>
       </div>
     </Alert>
   );
