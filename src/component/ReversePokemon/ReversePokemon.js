@@ -4,8 +4,6 @@ import { Table } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 
 const ReversePokemon = ({ pokemons, pokemonsCar }) => {
-  let ids = 5;
-
   const reversePokemonTitle = "Reverse Pokemon";
 
   return (
@@ -36,7 +34,7 @@ const ReversePokemon = ({ pokemons, pokemonsCar }) => {
                 <tbody key={pokemon.id}>
                   <tr>
                     <td>
-                      <b>{ids--}</b>
+                      <b>{parseInt(pokemon.number, 10)}</b>
                     </td>
                     <td>
                       <b>{pokemon.name}</b>
