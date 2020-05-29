@@ -32,7 +32,7 @@ const Pokemons = () => {
       />
       <Switch>
         <Route
-          path="/reverseList"
+          path="/Pokemon-List-React-GraphQL/reverseList"
           render={(routeProps) => (
             <ReversePokemon
               {...routeProps}
@@ -42,7 +42,7 @@ const Pokemons = () => {
           )}
         />
         <Route
-          path="/"
+          path="/Pokemon-List-React-GraphQL/"
           exact
           render={(routeProps) => (
             <Pokemon
