@@ -1,11 +1,20 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 import { Table } from "react-bootstrap";
 import { Helmet } from "react-helmet";
+import Pagination from "../../Pagination/Pagination";
+import { paginate } from "../../Pagination/paginate";
 
-const Pokemon = ({ pokemons, pokemonsCar, setCurrentPage }) => {
+const Pokemon = ({ pokemons, perPage }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  const pokemonsCar = paginate(pokemons, currentPage, perPage);
+
   const mainPokemonTitle = "Main Pokemon";
-  setCurrentPage(1);
   return (
     <Fragment>
       <Helmet>
@@ -47,6 +56,12 @@ const Pokemon = ({ pokemons, pokemonsCar, setCurrentPage }) => {
               </tbody>
             ))}
         </Table>
+        <Pagination
+          totalPros={pokemons.length}
+          currentPage={currentPage}
+          perPage={perPage}
+          onPageChange={handlePageChange}
+        />
       </div>
     </Fragment>
   );

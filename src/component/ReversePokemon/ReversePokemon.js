@@ -1,11 +1,20 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 import { Table } from "react-bootstrap";
 import { Helmet } from "react-helmet";
+import Pagination from "../../Pagination/Pagination";
+import { paginate } from "../../Pagination/paginate";
 
-const ReversePokemon = ({ pokemons, pokemonsCar, setCurrentPage }) => {
+const ReversePokemon = ({ pokemons, perPage }) => {
+  const [currentPage, setCurrentPage] = useState(4);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  const pokemonsCar = paginate(pokemons, currentPage, perPage);
+
   const reversePokemonTitle = "Reverse Pokemon";
-  setCurrentPage(4);
   return (
     <Fragment>
       <Helmet>
@@ -50,6 +59,12 @@ const ReversePokemon = ({ pokemons, pokemonsCar, setCurrentPage }) => {
                 </tbody>
               ))}
         </Table>
+        <Pagination
+          totalPros={pokemons.length}
+          currentPage={currentPage}
+          perPage={perPage}
+          onPageChange={handlePageChange}
+        />
       </div>
     </Fragment>
   );
