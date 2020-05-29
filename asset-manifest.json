@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Pokemon-List-React-GraphQL/static/css/main.6196441b.chunk.css",
-    "main.js": "/Pokemon-List-React-GraphQL/static/js/main.d0a043ad.chunk.js",
-    "main.js.map": "/Pokemon-List-React-GraphQL/static/js/main.d0a043ad.chunk.js.map",
+    "main.js": "/Pokemon-List-React-GraphQL/static/js/main.2ba10c95.chunk.js",
+    "main.js.map": "/Pokemon-List-React-GraphQL/static/js/main.2ba10c95.chunk.js.map",
     "runtime-main.js": "/Pokemon-List-React-GraphQL/static/js/runtime-main.3d7a0ce2.js",
     "runtime-main.js.map": "/Pokemon-List-React-GraphQL/static/js/runtime-main.3d7a0ce2.js.map",
     "static/css/2.f0924b25.chunk.css": "/Pokemon-List-React-GraphQL/static/css/2.f0924b25.chunk.css",
     "static/js/2.46491e60.chunk.js": "/Pokemon-List-React-GraphQL/static/js/2.46491e60.chunk.js",
     "static/js/2.46491e60.chunk.js.map": "/Pokemon-List-React-GraphQL/static/js/2.46491e60.chunk.js.map",
     "index.html": "/Pokemon-List-React-GraphQL/index.html",
-    "precache-manifest.798ca4473491953109cd9f6395ad3729.js": "/Pokemon-List-React-GraphQL/precache-manifest.798ca4473491953109cd9f6395ad3729.js",
+    "precache-manifest.761c193a0ea84776938739ec923ebbde.js": "/Pokemon-List-React-GraphQL/precache-manifest.761c193a0ea84776938739ec923ebbde.js",
     "service-worker.js": "/Pokemon-List-React-GraphQL/service-worker.js",
     "static/css/2.f0924b25.chunk.css.map": "/Pokemon-List-React-GraphQL/static/css/2.f0924b25.chunk.css.map",
     "static/css/main.6196441b.chunk.css.map": "/Pokemon-List-React-GraphQL/static/css/main.6196441b.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.f0924b25.chunk.css",
     "static/js/2.46491e60.chunk.js",
     "static/css/main.6196441b.chunk.css",
-    "static/js/main.d0a043ad.chunk.js"
+    "static/js/main.2ba10c95.chunk.js"
   ]
 }
