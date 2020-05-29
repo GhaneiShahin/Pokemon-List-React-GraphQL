@@ -6,7 +6,7 @@ import Pagination from "../../Pagination/Pagination";
 import { paginate } from "../../Pagination/paginate";
 
 const ReversePokemon = ({ pokemons, perPage }) => {
-  const [currentPage, setCurrentPage] = useState(4);
+  const [currentPage, setCurrentPage] = useState(5);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);

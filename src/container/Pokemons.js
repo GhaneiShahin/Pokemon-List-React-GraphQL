@@ -12,7 +12,7 @@ const Pokemons = () => {
   const [perPage] = useState(5);
 
   const { data: { pokemons = [] } = {} } = useQuery(GET_POKEMONS, {
-    variables: { first: 20 }
+    variables: { first: 25 }
   });
 
   return (
@@ -23,7 +23,7 @@ const Pokemons = () => {
       />
       <Switch>
         <Route
-          path="/reverseList"
+          path="/Pokemon-List-React-GraphQL/reverseList"
           render={(routeProps) => (
             <ReversePokemon
               {...routeProps}
@@ -33,7 +33,7 @@ const Pokemons = () => {
           )}
         />
         <Route
-          path="/Pokemon-List-React-GraphQL/"
+          path="/Pokemon-List-React-GraphQL"
           exact
           render={(routeProps) => (
             <Pokemon {...routeProps} pokemons={pokemons} perPage={perPage} />
