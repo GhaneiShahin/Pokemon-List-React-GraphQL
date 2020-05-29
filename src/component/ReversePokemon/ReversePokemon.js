@@ -3,9 +3,9 @@ import React, { Fragment } from "react";
 import { Table } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 
-const ReversePokemon = ({ pokemons, pokemonsCar }) => {
+const ReversePokemon = ({ pokemons, pokemonsCar, setCurrentPage }) => {
   const reversePokemonTitle = "Reverse Pokemon";
-
+  setCurrentPage(4);
   return (
     <Fragment>
       <Helmet>

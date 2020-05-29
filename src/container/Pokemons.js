@@ -38,6 +38,7 @@ const Pokemons = () => {
               {...routeProps}
               pokemons={pokemons}
               pokemonsCar={pokemonsCar}
+              setCurrentPage={setCurrentPage}
             />
           )}
         />
@@ -49,6 +50,7 @@ const Pokemons = () => {
               {...routeProps}
               pokemons={pokemons}
               pokemonsCar={pokemonsCar}
+              setCurrentPage={setCurrentPage}
             />
           )}
         />
