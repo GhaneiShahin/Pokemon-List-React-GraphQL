@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,QAAS,CACT,SAAU,CACV,qBACF,CAEA,EACE,8BACF,CAEA,UACE,sBACF","file":"main.e743a0a1.chunk.css","sourcesContent":["body {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n* {\n  font-family: \"Mukta\", sans-serif;\n}\n\n.table td {\n  vertical-align: inherit;\n}\n"]}
