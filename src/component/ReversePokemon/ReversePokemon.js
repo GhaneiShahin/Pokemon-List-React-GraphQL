@@ -37,7 +37,7 @@ const ReversePokemon = ({ pokemons, perPage }) => {
                 <h4>Types</h4>
               </th>
               <th>
-                <h4>Pokémon Name</h4>
+                <h4>Name</h4>
               </th>
               <th>
                 <h4>Images</h4>
