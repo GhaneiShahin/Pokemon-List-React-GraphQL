@@ -9,10 +9,10 @@ import Pokemon from "../component/Pokemon/Pokemon";
 import ReversePokemon from "../component/ReversePokemon/ReversePokemon";
 
 const Pokemons = () => {
-  const [perPage] = useState(5);
+  const [perPage] = useState(31);
 
   const { data: { pokemons = [] } = {} } = useQuery(GET_POKEMONS, {
-    variables: { first: 25 }
+    variables: { first: 151 }
   });
 
   return (

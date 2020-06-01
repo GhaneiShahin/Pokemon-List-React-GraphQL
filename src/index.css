@@ -11,3 +11,17 @@ body {
 .table td {
   vertical-align: inherit;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 2px;
+}

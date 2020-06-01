@@ -21,7 +21,6 @@ const Pagination = ({ totalPros, currentPage, perPage, onPageChange }) => {
             className={page === currentPage ? "page-item active" : "page-item"}
           >
             <Button
-              // href={toString()}
               className="page-link"
               style={{ cursor: "pointer" }}
               onClick={() => onPageChange(page)}
