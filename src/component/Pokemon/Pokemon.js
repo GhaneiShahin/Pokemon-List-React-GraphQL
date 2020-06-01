@@ -14,24 +14,33 @@ const Pokemon = ({ pokemons, perPage }) => {
 
   const pokemonsCar = paginate(pokemons, currentPage, perPage);
 
-  const mainPokemonTitle = "Main Pokemon";
+  const mainPokemonTitle = "Main Pokémon";
   return (
     <Fragment>
       <Helmet>
         <title>{mainPokemonTitle}</title>
       </Helmet>
       <div className="container">
-        <Table bordered hover className="mt-5 text-center shadow-lg">
-          <thead>
+        <Table
+          size="sm"
+          responsive
+          bordered
+          hover
+          className="mt-5 text-center"
+        >
+          <thead className="text-info">
             <tr>
               <th>
-                <h3>#</h3>
+                <h4>#</h4>
               </th>
               <th>
-                <h3>Pokemons Name</h3>
+                <h4>Types</h4>
               </th>
               <th>
-                <h3>Images</h3>
+                <h4>Pokémon Name</h4>
+              </th>
+              <th>
+                <h4>Images</h4>
               </th>
             </tr>
           </thead>
@@ -40,10 +49,13 @@ const Pokemon = ({ pokemons, perPage }) => {
               <tbody key={pokemon.id}>
                 <tr>
                   <td>
-                    <b>{parseInt(pokemon.number, 10)}</b>
+                    <b className="text-danger">{parseInt(pokemon.number)}</b>
                   </td>
                   <td>
-                    <b>{pokemon.name}</b>
+                    <b className="text-dark">{pokemon.classification}</b>
+                  </td>
+                  <td>
+                    <b className="text-dark">{pokemon.name}</b>
                   </td>
                   <td className="d-flex justify-content-center">
                     <img

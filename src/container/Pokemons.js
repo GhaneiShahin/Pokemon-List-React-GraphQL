@@ -18,7 +18,7 @@ const Pokemons = () => {
   return (
     <Fragment>
       <Header
-        appTitle="Pokemon List, made with React, GraphQL"
+        appTitle="Pokémon List, made with React, GraphQL"
         poks={pokemons.length}
       />
       <Switch>

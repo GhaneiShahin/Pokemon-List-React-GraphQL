@@ -15,7 +15,7 @@ const Header = (props) => {
         <Badge pill variant="primary" className="mr-1 ml-1">
           {props.poks}
         </Badge>
-        Pokemons
+        Pokémon
       </h5>
       <div className="d-flex justify-content-around">
         <Link to="/Pokemon-List-React-GraphQL">Main Table</Link>
