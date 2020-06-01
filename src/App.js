@@ -10,9 +10,11 @@ const App = () => {
   });
 
   return (
-    <ApolloProvider client={client}>
-      <Pokemons />
-    </ApolloProvider>
+    <>
+      <ApolloProvider client={client}>
+        <Pokemons />
+      </ApolloProvider>
+    </>
   );
 };
 
