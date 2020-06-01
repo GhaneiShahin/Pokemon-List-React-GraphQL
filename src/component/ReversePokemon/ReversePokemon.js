@@ -12,7 +12,7 @@ const ReversePokemon = ({ pokemons, perPage }) => {
     setCurrentPage(page);
   };
 
-  const pokemonsCar = paginate(pokemons, currentPage, perPage);
+  const pokemonCharacters = paginate(pokemons, currentPage, perPage);
 
   const reversePokemonTitle = "Reverse Pokémon";
   return (
@@ -45,7 +45,7 @@ const ReversePokemon = ({ pokemons, perPage }) => {
             </tr>
           </thead>
           {pokemons &&
-            pokemonsCar
+            pokemonCharacters
               .slice(0)
               .reverse()
               .map((pokemon) => (

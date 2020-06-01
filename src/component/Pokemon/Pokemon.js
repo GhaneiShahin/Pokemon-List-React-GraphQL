@@ -12,7 +12,7 @@ const Pokemon = ({ pokemons, perPage }) => {
     setCurrentPage(page);
   };
 
-  const pokemonsCar = paginate(pokemons, currentPage, perPage);
+  const pokemonCharacters = paginate(pokemons, currentPage, perPage);
 
   const mainPokemonTitle = "Main Pokémon";
   return (
@@ -45,7 +45,7 @@ const Pokemon = ({ pokemons, perPage }) => {
             </tr>
           </thead>
           {pokemons &&
-            pokemonsCar.map((pokemon) => (
+            pokemonCharacters.map((pokemon) => (
               <tbody key={pokemon.id}>
                 <tr>
                   <td>
