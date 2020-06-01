@@ -21,13 +21,7 @@ const ReversePokemon = ({ pokemons, perPage }) => {
         <title>{reversePokemonTitle}</title>
       </Helmet>
       <div className="container">
-        <Table
-          size="sm"
-          responsive
-          bordered
-          hover
-          className="mt-5 text-center"
-        >
+        <Table size="sm" responsive bordered hover className="mt-5 text-center">
           <thead className="text-info">
             <tr>
               <th>
@@ -44,32 +38,33 @@ const ReversePokemon = ({ pokemons, perPage }) => {
               </th>
             </tr>
           </thead>
-          {pokemons &&
-            pokemonCharacters
-              .slice(0)
-              .reverse()
-              .map((pokemon) => (
-                <tbody key={pokemon.id}>
-                  <tr>
-                    <td>
-                      <b className="text-danger">{parseInt(pokemon.number, 10)}</b>
-                    </td>
-                    <td>
-                      <b className="text-dark">{pokemon.classification}</b>
-                    </td>
-                    <td>
-                      <b className="text-dark">{pokemon.name}</b>
-                    </td>
-                    <td className="d-flex justify-content-center">
-                      <img
-                        style={{ height: "50px", width: "50px" }}
-                        src={pokemon.image}
-                        alt={pokemon.name}
-                      />
-                    </td>
-                  </tr>
-                </tbody>
-              ))}
+          {pokemonCharacters
+            .slice(0)
+            .reverse()
+            .map((pokemon) => (
+              <tbody key={pokemon.id}>
+                <tr>
+                  <td>
+                    <b className="text-danger">
+                      {parseInt(pokemon.number, 10)}
+                    </b>
+                  </td>
+                  <td>
+                    <b className="text-dark">{pokemon.classification}</b>
+                  </td>
+                  <td>
+                    <b className="text-dark">{pokemon.name}</b>
+                  </td>
+                  <td className="d-flex justify-content-center">
+                    <img
+                      style={{ height: "50px", width: "50px" }}
+                      src={pokemon.image}
+                      alt={pokemon.name}
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            ))}
         </Table>
         <Pagination
           totalPros={pokemons.length}
