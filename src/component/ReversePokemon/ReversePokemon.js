@@ -38,33 +38,28 @@ const ReversePokemon = ({ pokemons, perPage }) => {
               </th>
             </tr>
           </thead>
-          {pokemonCharacters
-            .slice(0)
-            .reverse()
-            .map((pokemon) => (
-              <tbody key={pokemon.id}>
-                <tr>
-                  <td>
-                    <b className="text-danger">
-                      {parseInt(pokemon.number, 10)}
-                    </b>
-                  </td>
-                  <td>
-                    <b className="text-dark">{pokemon.classification}</b>
-                  </td>
-                  <td>
-                    <b className="text-dark">{pokemon.name}</b>
-                  </td>
-                  <td className="d-flex justify-content-center">
-                    <img
-                      style={{ height: "50px", width: "50px" }}
-                      src={pokemon.image}
-                      alt={pokemon.name}
-                    />
-                  </td>
-                </tr>
-              </tbody>
-            ))}
+          {pokemonCharacters.reverse().map((pokemon) => (
+            <tbody key={pokemon.id}>
+              <tr>
+                <td>
+                  <b className="text-danger">{parseInt(pokemon.number, 10)}</b>
+                </td>
+                <td>
+                  <b className="text-dark">{pokemon.classification}</b>
+                </td>
+                <td>
+                  <b className="text-dark">{pokemon.name}</b>
+                </td>
+                <td className="d-flex justify-content-center">
+                  <img
+                    style={{ height: "50px", width: "50px" }}
+                    src={pokemon.image}
+                    alt={pokemon.name}
+                  />
+                </td>
+              </tr>
+            </tbody>
+          ))}
         </Table>
         <Pagination
           totalPros={pokemons.length}
