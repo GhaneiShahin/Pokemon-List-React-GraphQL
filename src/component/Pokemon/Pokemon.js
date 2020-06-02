@@ -8,11 +8,11 @@ import { paginate } from "../../Pagination/paginate";
 const Pokemon = ({ pokemons, perPage }) => {
   const [currentPage, setCurrentPage] = useState(1);
 
+  const pokemonCharacters = paginate(pokemons, currentPage, perPage);
+
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
-
-  const pokemonCharacters = paginate(pokemons, currentPage, perPage);
 
   const mainPokemonTitle = "Main Pokémon";
   return (

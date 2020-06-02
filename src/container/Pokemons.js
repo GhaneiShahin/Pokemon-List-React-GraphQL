@@ -33,10 +33,9 @@ const Pokemons = () => {
         appTitle="Pokémon List, made with React, GraphQL"
         poks={pokemons.length}
       />
-
       <Switch>
         <Route
-          path="/Pokemon-List-React-GraphQL/reverseList"
+          path="/reverseList"
           render={(routeProps) => (
             <ReversePokemon
               {...routeProps}
@@ -46,7 +45,7 @@ const Pokemons = () => {
           )}
         />
         <Route
-          path="/Pokemon-List-React-GraphQL"
+          path="/"
           exact
           render={(routeProps) => (
             <Pokemon {...routeProps} pokemons={pokemons} perPage={perPage} />
